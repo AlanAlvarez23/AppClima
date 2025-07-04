@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Clima en tu Ciudad</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🌦 Clima en tu Ciudad</h1>
+
+    <input type="text" id="cityInput" placeholder="Ej. Monterrey,mx" />
+    <button onclick="getWeatherFromInput()">Buscar ciudad</button>
+    <button onclick="getLocalWeather()">📍 Mi ubicación</button>
+
+    <div id="weatherResult" class="weather">
+      <!-- Resultado -->
+    </div>
+    <div id="forecastResult" class="forecast">
+  <!-- Aquí va la predicción a 5 días -->
+</div>
+  </div>
+
+  <footer>
+    <p>🌐 Powered by OpenWeatherMap</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
